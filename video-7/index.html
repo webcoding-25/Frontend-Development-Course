@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form and Input Tags</title>
+  </head>
+  <body>
+
+	<!-- Form टैग का इस्तेमाल हम वेबसाइट पर user से data लेने के लिए करते हैं।
+जैसे कि – नाम, ईमेल, पासवर्ड, फीडबैक वगैरह।
+जो भी डेटा हमें user से लेना होता है, वो हम form के अंदर input टैग की मदद से collect करते हैं। -->
+    <form action="">
+      <div>
+        <label for="">Name:</label>
+        <input type="text" placeholder="Enter your name" />
+      </div>
+<!-- 
+	  Input टैग एक self-closing टैग होता है – यानी इसे बंद करने की ज़रूरत नहीं होती।
+इसका इस्तेमाल हम user से input लेने के लिए करते हैं।
+जैसे – text, number, email, password, checkbox, radio, file upload वगैरह। -->
+
+      <div>
+        <label for="email">Email:</label> 
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="">Mobile:</label>
+        <input type="tel" id="email" />
+      </div>
+
+      <div>
+        <label for="email">Password:</label>
+        <input type="password" id="email" />
+      </div>
+
+      <div>
+        Male<input type="radio" name="gender" id="" /> Female<input
+          type="radio"
+          name="gender"
+          id=""
+        />
+        Other<input type="radio" name="gender" id="" />
+      </div>
+
+      <div>
+        <input type="button" value="click" />
+      </div>
+
+      <div>
+        <input type="checkbox" value="click" />
+        <input type="checkbox" value="click" />
+        <input type="checkbox" value="click" />
+      </div>
+
+      <div>
+        <input type="number" name="" id="" />
+      </div>
+
+      <input type="date" name="" id="" />
+      <div>
+        <input type="file" name="" id="" />
+      </div>
+
+      <div>
+        <input type="range" name="" id="" />
+      </div>
+      <div>
+        <input type="submit" name="" id="" />
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
