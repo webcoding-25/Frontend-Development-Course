@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audio, Video, and Media Elements in HTML</title>
+</head>
+<body>
+
+	<!-- HTML में Media Elements वो होते हैं जिनकी मदद से हम वेबसाइट पर ऑडियो, वीडियो, या दूसरी मीडिया फाइल्स को डायरेक्टली प्ले कर सकते हैं। -->
+	<h1>Media Elements in HTML</h1>
+	<!-- .....audio element.... -->
+	 <!-- <audio> टैग का इस्तेमाल होता है म्यूज़िक, पॉडकास्ट या साउंड क्लिप चलाने के लिए।
+
+controls लगाना ज़रूरी है ताकि यूज़र प्ले, पॉज़ और वॉल्यूम कंट्रोल कर सके।
+
+<source> टैग से आप फाइल को जोड़ते हैं। आप एक से ज्यादा फॉर्मेट भी दे सकते हैं -->
+	<audio controls muted loop autoplay>
+		<source src="audio.mp3">
+	</audio>
+	<!-- .....video element.... -->
+	 <!-- HTML5 ने हमें <video> टैग दिया जिससे हम बिना किसी external player के वीडियो चला सकते हैं। -->
+		<!-- width और height से आप वीडियो का साइज सेट करते हैं।
+
+controls से प्ले, पॉज़, वॉल्यूम जैसे options मिलते हैं।
+
+.mp4 फॉर्मेट सबसे ज़्यादा सपोर्टेड होता है। -->
+<!-- autoplay – वीडियो खुद शुरू हो जाएगा।
+
+loop – वीडियो रिपीट होता रहेगा।
+
+muted – बिना साउंड के चलेगा (useful for autoplay)। -->
+
+	<video height="400" width="400" controls muted autoplay loop >
+		<source src="video.mp4">
+	</video>
+
+
+<!-- .............Iframe element............ -->
+<!-- अगर आप YouTube या किसी दूसरी वेबसाइट का वीडियो अपनी वेबसाइट में डालना चाहते हैं,
+तो आप <iframe> टैग का इस्तेमाल करेंगे। -->
+	<iframe width="400" height="300" src="https://www.youtube.com/embed/Y6kHxZR57fI" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+</body>
+</html>
