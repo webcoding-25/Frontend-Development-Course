@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Selectors</title>
+	<style>
+
+		/* 1. element selector (इससे हम किसी tag को direct target करते हैं।)*/
+		section{
+			background-color: aqua;
+		}
+		h3{
+			color: red;
+		}
+
+		/* 2. class selector (Class selector un elements ke liye use hota है जिनमें same design apply करनी हो.) */
+    
+		.heading{
+			color: blue;
+		}
+/* 
+		3. ID Selector (ID selector specific element को target करता है — jiska ek hi unique ID hoti है.) */
+
+		#main-section{
+			background-color: aqua;
+		}
+
+		/* 4. Universal Selector (Ye sabhi elements ko target करता है.)  */
+
+		*{
+			color: rgb(0, 0, 0);
+			/* margin: 0; */
+		}
+
+		/* 5. Grouping selector (Jab aap ek ही CSS rule multiple selectors pe lagाना चाहते हो.) */
+
+  h3,h2,p{
+	color: red;
+  }
+
+  /* 6. Descendant selector (Ye kisi element ke andar wale element ko style करता है.) */
+
+  #main-section h3{
+  background-color: yellow;
+  }
+
+
+	</style>
+</head>
+<body>
+	<section id="main-section">
+		<h3 class="heading">Home</h3>
+		<h3>About</h3>
+		<h3>Service</h3>
+		<h3>Contact</h3>
+		<h3>hello</h3>
+	</section>
+
+	<h3>Learning CSS</h3>
+
+	<h2 class="heading">hello</h2>
+	<p class="heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae veritatis et molestias labore fuga aliquam animi accusamus iure totam sint!</p>
+</body>
+</html>
