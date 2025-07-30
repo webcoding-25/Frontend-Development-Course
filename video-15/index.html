@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Box Modal</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			/* If you set box-sizing: border-box; on an element, padding and border are included in the width and height: */
+		}
+		.box1{
+			background-color: antiquewhite;
+			border: 6px solid red;
+			padding: 20px;
+			margin: 25px 20px;
+			width: 300px;
+			height: 200px;
+			
+		}
+		.box2{
+			background-color: aqua;
+			border: 6px solid rgb(32, 12, 12);
+			padding: 20px;
+			margin: 35px 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- CSS Box Modal consists of: content, padding, borders and margins. -->
+	 <!-- Content - The content of the box, where text appear.
+Padding - Space around the content. The padding is transparent
+Border - A border that wrap the padding and content
+Margin - Space outside the border. The margin is transparent -->
+	<div class="box1">Box1</div>
+	<div class="box2">Box2</div>
+
+<!-- Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. -->
+
+	<!-- Total element width = width + left padding + right padding + left border + right border -->
+
+
+<!-- 
+Total element height = height + top padding + bottom padding + top border + bottom border -->
+</body>
+</html>
