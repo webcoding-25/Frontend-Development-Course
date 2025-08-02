@@ -3,49 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Text Property In cSS</title>
+
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+	<title>Font Property in CSS</title>
 	<style>
+
+		
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 		h1{
-			/* text-align: right;
-			text-align: left; */
-			text-align: center;
-			/* text-decoration: underline;
-			text-decoration-color: red;
-			text-decoration-thickness: 10px;
-			text-decoration-style: dotted; */
-			text-decoration: underline dotted 8px red;
-			text-transform: capitalize;
-			text-shadow: 2px 2px 2px yellow;
+			font-size: 80px;
+			/* Text का size बढ़ाने या घटाने के लिए हम font-size use करते हैं – */
+
+			font-family: serif;
+			font-family: sans-serif;
+			font-family: Arial, Helvetica, sans-serif;
+			font-family: 'Times New Roman', Times, serif;
+			
+			/* Serif fonts have a small stroke at the edges of each letter.  */
+/* Sans-serif fonts have clean lines (no small strokes attached).  */
 			
 		}
 		p{
-			/* text-align: justify; */
-			color: blue;
-			/* text-align-last: center; */
-			/* text-decoration: underline; */
-			/* text-decoration-style: wavy; */
-			text-indent: 50px;
-			word-spacing: 10px;
-			letter-spacing: 4px;
-			/* line-height: 50px; */
-			/* white-space: nowrap; */
-			
-		}
+			/* font-size: 30px;
+			font-family: "Poppins", sans-serif;
+			font-weight: 400;
 
-		a{
-			text-decoration: none;
-			text-decoration-line: underline;
-			line-height: 40px;
+			font-style: normal; */
+			font: italic 600 30px sans-serif;
+
+
+			/* font-weight: Text को bold या light बनाने के लिए यूज़ होती है – */
+			/* Font shorthand में font-size और font-family जरूरी होते हैं, नहीं तो ये apply नहीं होगी!" */
+
 			
 		}
 	</style>
 </head>
 <body>
-	<h1>Hello World</h1>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis itaque laborum ipsa commodi adipisci! Perferendis facilis possimus qui amet cumque.</p>
-
-	<a href="">About Us</a><br>
-	<a href="">About Us</a> <br>
-	<a href="">About Us</a>
+	<h1>Font Property</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, iste.</p>
 </body>
 </html>
