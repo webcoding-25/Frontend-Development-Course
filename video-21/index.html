@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+    <style>
+      h1,
+      p,
+      div {
+        border: 2px solid red;
+      }
+
+      h1 {
+        display: inline-block;
+		/* width: 50%;
+		height: 100px; */
+		/* padding: 20px; */
+      }
+
+      a {
+        border: 2px solid green;
+        display: block;
+        width: 40%;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Block, Inline, Inline-block -->
+
+<!-- Block elements हमेशा नई line से शुरू होते हैं।
+ये अपनी पूरी available width ले लेते हैं।
+इन पर आप आसानी से width, height, margin, padding apply कर सकते हैं। -->
+    <h1>WebCoding</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+      similique repellat tempore perferendis officiis et tempora quidem alias
+      cum ex.
+    </p>
+    <div>Box1</div>
+<!-- Inline elements नई line से start नहीं होते।
+जितनी space content को चाहिए उतनी ही लेते हैं।
+width और height set नहीं कर सकते (ignore हो जाता है)। -->
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Services</a>
+    <a href="">Contact</a>
+
+	<!-- Inline-block elements भी एक ही line में रहते हैं, बिल्कुल inline की तरह।
+लेकिन फर्क यह है कि इन पर आप width और height set कर सकते हैं, जो inline में possible नहीं है।
+मतलब यह hybrid है: inline जैसा दिखाई देगा लेकिन block जैसी properties रखेगा -->
+  </body>
+</html>
