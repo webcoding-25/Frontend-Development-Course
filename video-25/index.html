@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS POsition</title>
+    <style>
+      .parent{
+			width: 450px;
+			height: 500px;
+			border: 1px solid red;
+		}
+      .box {
+        width: 100px;
+        height: 100px;
+        background: rgb(135, 231, 231);
+        margin: 5px 0;
+      }
+
+      .box1 {
+      position: relative;
+			top: 40px;
+			left: 40px;
+      background: yellow;
+      z-index: 15;
+      }
+      .box4{
+        position: relative;
+        bottom: 100px;
+        left: 20px;
+        background-color: red;
+        z-index: 8;
+      }
+      /* 2. relative
+Element अपनी normal जगह से थोड़ा हिल सकता है (top, left, right, bottom से)।
+लेकिन element की original जगह reserved रहती है।
+Useful जब हमें child elements को absolute से place करना हो।   */
+    .box2{
+      position: relative;
+      z-index: 9;
+    }
+
+      .box3 {
+        /* position: fixed;
+			top: 0px;
+			width: 100%;
+			height: 60px; */
+        /* position: absolute;
+			top: 200px;
+			left: 300px; */
+
+			position: sticky;
+			top: 0;
+	  }
+
+    /* 3. absolute
+Element document flow से बाहर निकल जाता है।
+ये अपने सबसे नज़दीकी positioned parent (जिस पर relative, absolute या fixed हो) के हिसाब से place होता है।
+अगर कोई positioned parent नहीं मिला → तो यह पूरे document (body) के हिसाब से place होगा। */
+      /* .image {
+        position: relative;
+		background-color: yellow;
+      } */
+	  .image img{
+		width: 100%;
+	  }
+      h2 {
+		position: absolute;
+		top: 50%;
+		left: 100px;
+		color: #fff;
+		font-size: 30px;
+      }
+
+      /* 4. fixed
+Element screen (viewport) के हिसाब से fix हो जाता है।
+Scroll करने पर भी हमेशा एक ही जगह दिखाई देगा।
+Useful: Navbar, Floating buttons, Chat icons। */
+
+
+/* 5. sticky
+Sticky element शुरू में normal (static) की तरह behave करता है।
+Scroll करते समय जब वो top / left / right / bottom value पर पहुँचता है, तब वो वहीं चिपक जाता है।
+Sticky parent container के अंदर ही काम करता है। */
+
+    </style>
+  </head>
+  <body>
+
+    <!-- 1. static (default)
+यह हर element की by default position होती है।
+Element normal document flow में रहता है।
+top, left, right, bottom properties इस पर काम नहीं करतीं -->
+    <div class="parent">
+    <div class="box box1">1</div>
+		 <div class="box box2">2</div>
+		 <div class="box box4">4</div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum,
+        iste. Excepturi distinctio aliquam, autem perspiciatis temporibus at
+        numquam ex sed laudantium repellat iusto voluptatibus officia accusamus
+        amet placeat atque adipisci, eveniet nisi dolorem provident voluptatum
+        omnis. Odit ipsa repellendus eligendi molestias fuga quia illo, incidunt
+        aspernatur veritatis nesciunt nam quod possimus atque quo autem veniam
+        vero, ut dicta. Reiciendis maiores ullam ut, explicabo soluta quia omnis
+        error. Et sequi, praesentium illo fugit maiores asperiores neque
+        repellat iste porro alias quas, ad aut! Nesciunt similique enim expedita
+        non velit eos atque placeat aut, ea laboriosam, repellat nihil dolorem
+        quod quam cupiditate!
+      </p>
+      <div class="box box3">3</div>
+      <div class="image">
+        <img src="images.jpg" alt="" />
+        <h2>This is the nature image</h2>
+      </div>
+	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem enim error incidunt alias corrupti aliquam dolorum quisquam nobis modi maiores placeat molestiae excepturi laborum distinctio delectus vitae recusandae quo fugit, corporis eligendi! Alias rem magnam cupiditate maiores ipsa tempora suscipit eius aliquid sequi iusto reprehenderit deserunt soluta deleniti nulla quaerat tempore, possimus magni vitae, atque totam facilis delectus eos quae natus. Incidunt corporis id dolorem culpa reiciendis repellendus voluptatibus laboriosam excepturi! Repudiandae veniam, laboriosam odit porro vitae aliquam neque, dolor cupiditate maxime rem placeat ducimus autem sunt architecto amet nisi possimus? At quia nisi non voluptate illum maxime sequi. Nisi pariatur cum rerum, repellendus quibusdam quod, corrupti vitae, recusandae velit modi nesciunt doloribus libero. Voluptas excepturi assumenda quae quam expedita labore molestiae? Neque, est nam. Dicta obcaecati soluta voluptates corporis accusantium ipsa laboriosam, consectetur omnis eum, odio ducimus distinctio? Laboriosam vitae, quas mollitia voluptate consectetur nostrum libero fuga iste dolorum deleniti maiores excepturi aut nisi quasi vel dolorem facilis laborum at, neque quis eligendi perspiciatis optio ad? Corporis modi est expedita veniam voluptate fugiat velit tempore odio ratione nesciunt eos porro culpa consequuntur, dolorem debitis quos voluptatibus molestiae nobis. Obcaecati eligendi deleniti aliquid dolorem expedita quibusdam, quis beatae illo!</p>
+    </div>
+  </body>
+</html>
